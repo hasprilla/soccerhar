@@ -35,7 +35,7 @@ class CustomListviewVertical extends ConsumerWidget {
                     title: Text('${team.strTeam} - ${team.intFormedYear}'),
                     subtitle: Text(team.strStadium),
                     onTap: () =>
-                        context.push('/detailequipment/${team.idTeam}'),
+                        context.push('/detailequipment', extra: teams[index]),
                   ),
           );
         },
