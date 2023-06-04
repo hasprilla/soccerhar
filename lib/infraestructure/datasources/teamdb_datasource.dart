@@ -13,8 +13,8 @@ class TeamDbDatasource extends TeamDatasource {
 
   @override
   Future<List<Team>> getNowTeams({String name = ''}) async {
-    print(name);
-    final response = await dio.get('/search_all_teams.php?l=$name');
+    final response =
+        await dio.get('/search_all_teams.php?l=${name.replaceAll(' ', '%20')}');
     final teamsResponse = TeamsResponse.fromJson(response.data);
     final teams = <Team>[];
     for (final team in teamsResponse.teams) {
