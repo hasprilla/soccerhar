@@ -5,11 +5,8 @@ class TeamMapper {
     return Team(
       idTeam: json['idTeam'] ?? '',
       strTeam: json['strTeam'] ?? '',
-      strSport: json['strSport'] ?? '',
-      strCountry: json['strCountry'] ?? '',
-      strTeamBadge: json['strTeamBadge'] ?? '',
-      strTeamJersey: json['strTeamJersey'] ?? '',
-      strTeamLogo: json['strTeamLogo'] ?? '',
+      strTeamLogo: json['strTeamLogo'] ??
+          'https://cdn.iconscout.com/icon/premium/png-256-thumb/no-data-found-1965030-1662565.png',
       strStadium: json['strStadium'] ?? '',
       intFormedYear: json['intFormedYear'] ?? '',
     );
