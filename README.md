@@ -1,16 +1,30 @@
-# soccerhar
+# Soccerhar
 
 Todo lo relacionado con el deporte
 
-## Getting Started
+## Ejecucion
 
-This project is a starting point for a Flutter application.
+1. Clonar el proyecto
+2. Ejecutar el comando ```flutter pub get```
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencias
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+El aplicativo esta basado en las siguientes dependencias
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+go_router: ^6.2.0
+dio: ^5.1.2
+flutter_riverpod: ^2.3.6
+equatable: ^2.0.5
+```
+## Launch Screen
+Realizado de forma nativa tanto para Android como para IOS 
+
+## Screenshot
+![image](./screenshot/1.png)
+![image](./screenshot/2.png)
+![image](./screenshot/3.png)
+![image](./screenshot/4.png)
+![image](./screenshot/5.png)
+![image](./screenshot/6.png)
+![image](./screenshot/7.png)
