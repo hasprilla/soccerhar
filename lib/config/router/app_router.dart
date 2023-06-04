@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:soccerhar/presentation/screens/detail/detail_screen.dart';
-import 'package:soccerhar/presentation/screens/home/home_screens.dart';
+import 'package:soccerhar/features/detail_equipment/presentation/screens/detail_%20equipment_screen.dart';
+
+import '../../features/home/presentation/screens/home/home_screens.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -11,11 +12,11 @@ final router = GoRouter(
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
-      path: '/detail/:id',
+      path: '/detailequipment/:id',
       name: 'detail',
       builder: (context, state) {
         final id = state.params['id'] ?? 'no-id';
-        return DetailScreen(
+        return DetailEquipmentScreen(
           id: id,
         );
       },
