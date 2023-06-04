@@ -25,11 +25,6 @@ class CustomListviewHorizontal extends ConsumerWidget {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 3),
               child: FilledButton.tonal(
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    index == 0 ? Colors.amber : Colors.blue,
-                  ),
-                ),
                 onPressed: () => ref
                     .read(teamsNotifierProvider.notifier)
                     .loadPage(league.strLeague),
