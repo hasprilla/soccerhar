@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:soccerhar/presentation/providers/teams/teams_providers.dart';
 
 import '../../../../domain/entities/league.dart';
+import '../../../providers/teams/teams_providers.dart';
 
 class CustomListviewHorizontal extends ConsumerWidget {
   final List<League> leagues;
@@ -32,7 +32,7 @@ class CustomListviewHorizontal extends ConsumerWidget {
                 ),
                 onPressed: () => ref
                     .read(teamsNotifierProvider.notifier)
-                    .loadPage(league.strLeague.replaceAll(' ', '%20')),
+                    .loadPage(league.strLeague),
                 child: Text(league.strLeague),
               ),
             );
