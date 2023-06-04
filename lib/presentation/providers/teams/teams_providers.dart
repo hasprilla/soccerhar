@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:soccerhar/domain/entities/team.dart';
-import 'package:soccerhar/presentation/providers/teams/team_repository_provider.dart';
+
+import '../../../domain/entities/team.dart';
+import 'team_repository_provider.dart';
 
 final teamsNotifierProvider =
     StateNotifierProvider<TeamNotifier, List<Team>>((ref) {
